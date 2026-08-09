@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Portofolio Saya</h1>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1>Halo, <span>Saya Programmer handal</span></h1>
+        <p>Web Developer | Desainer | Editor</p>
+        <button onclick="scrollToContact()">Hubungi Kami</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Tentang saya</h2>
+        <p>Saya adalah seorang programmer yang berpengalaman dalam pengembangan web dan desain grafis. Saya memiliki kemampuan dalam berbagai bahasa pemrograman dan alat desain untuk menciptakan solusi kreatif dan efektif.</p>  
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Proyek</h2>
+
+        <div class="project-list">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Pamflet Desain</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Website Company Profile</p> 
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Website E-Commerce</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontak</h2>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Masukkan Nama" required/>
+            <input type="email" placeholder="Masukkan Email" required/>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button> 
+        </form>
+
+        <p id="message"></p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portofolio Badrus. All rights reserved.</p>
+    </footer>
+        
+</body>
+<script src="script.js"></script>
+</html>
