@@ -1,69 +1,148 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan — Kirana &amp; Bagaskara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1>Portofolio Saya</h1>
-        <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
-    <section id="home" class="hero">
-        <h1>Halo, <span>Saya Badrus Programmer handal</span></h1>
-        <p>Web Developer | Desainer | Editor</p>
-        <button onclick="scrollToContact()">Hubungi Kami</button>
+
+<div id="cover">
+  <svg class="cover-orn" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 6 L70 40 L92 44 L74 62 L79 88 L50 74 L21 88 L26 62 L8 44 L30 40 Z" stroke="#D4A94A" stroke-width="1.2"/>
+    <circle cx="50" cy="50" r="14" stroke="#D4A94A" stroke-width="1.2"/>
+    <circle cx="50" cy="50" r="4" fill="#D4A94A"/>
+  </svg>
+  <p class="cover-eyebrow">Undangan Pernikahan</p>
+  <h1 class="cover-names">Kirana<span class="cover-amp">&amp;</span>Bagaskara</h1>
+  <p class="cover-date">Sabtu, 7 Agustus 2027</p>
+  <p class="cover-guest">Kepada Bapak/Ibu/Saudara/i<br><strong>Bapak/Ibu Tamu Undangan</strong></p>
+  <button class="btn-open" id="btnBuka">Buka Undangan</button>
+</div>
+
+<div class="page">
+  <div class="kawung-tex"></div>
+
+  <div id="content">
+
+    <!-- HERO / QUOTE -->
+    <section id="pembuka">
+      <div class="frame-border"></div>
+      <p class="eyebrow">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      <p class="lead-quote">
+        Dua hati yang bertaut bagai jalinan lurik, berbeda benang namun menyatu dalam satu kain kehidupan. Dengan penuh syukur, kami mengundang Bapak/Ibu untuk turut menyaksikan dan mendoakan langkah kami.
+        <span class="lead-quote-src">— Keluarga Besar Kedua Mempelai</span>
+      </p>
     </section>
 
-    <section id="about" class="section">
-        <h2>Tentang saya</h2>
-        <p>Saya adalah seorang programmer yang berpengalaman dalam pengembangan web dan desain grafis. Saya memiliki kemampuan dalam berbagai bahasa pemrograman dan alat desain untuk menciptakan solusi kreatif dan efektif.</p>  
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Proyek</h2>
-
-        <div class="project-list">
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Pamflet Desain</p>
-            </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Website Company Profile</p> 
-            </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Website E-Commerce</p>
-            </div>
+    <!-- MEMPELAI -->
+    <section id="mempelai">
+      <p class="eyebrow">Mempelai</p>
+      <h2 class="section-title">Kedua Mempelai</h2>
+      <div class="couple-wrap">
+        <div class="couple-card">
+          <div class="couple-photo">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none"><path d="M12 12c2.5 0 4.5-2 4.5-4.5S14.5 3 12 3 7.5 5 7.5 7.5 9.5 12 12 12Zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5Z" fill="#8A5A2E"/></svg>
+          </div>
+          <h3 class="couple-name">Kirana Ayu Ningtyas</h3>
+          <p class="couple-parents">Putri kedua dari<br>Bapak Sutrisno &amp; Ibu Wahyuni</p>
         </div>
+        <div class="couple-divider">✦</div>
+        <div class="couple-card">
+          <div class="couple-photo">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none"><path d="M12 12c2.5 0 4.5-2 4.5-4.5S14.5 3 12 3 7.5 5 7.5 7.5 9.5 12 12 12Zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5Z" fill="#8A5A2E"/></svg>
+          </div>
+          <h3 class="couple-name">Bagaskara Adjie P.</h3>
+          <p class="couple-parents">Putra pertama dari<br>Bapak Hariyanto &amp; Ibu Sulastri</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Kontak</h2>
+    <!-- ACARA -->
+    <section id="acara">
+      <p class="eyebrow">Rangkaian Acara</p>
+      <h2 class="section-title">Waktu &amp; Tempat</h2>
 
-        <form id="contactForm">
-            <input type="text" placeholder="Masukkan Nama" required/>
-            <input type="email" placeholder="Masukkan Email" required/>
-            <textarea placeholder="Pesan" required></textarea>
-            <button type="submit">Kirim</button> 
-        </form>
+      <div class="acara-card">
+        <p class="acara-label">Akad Nikah</p>
+        <h3 class="acara-title">Ijab Kabul</h3>
+        <div class="acara-row"><b>Hari</b><span>Sabtu, 7 Agustus 2027</span></div>
+        <div class="acara-row"><b>Pukul</b><span>08.00 WIB – selesai</span></div>
+        <div class="acara-row"><b>Tempat</b><span>Pendapa Ndalem Rejoso, Kec. Rejoso, Kab. Pasuruan</span></div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Rejoso%2C+Kabupaten+Pasuruan" target="_blank" rel="noopener">Lihat lokasi di peta →</a>
+      </div>
 
-        <p id="message"></p>
-        
+      <div class="acara-card">
+        <p class="acara-label">Resepsi</p>
+        <h3 class="acara-title">Tasyakuran</h3>
+        <div class="acara-row"><b>Hari</b><span>Sabtu, 7 Agustus 2027</span></div>
+        <div class="acara-row"><b>Pukul</b><span>11.00 – 14.00 WIB</span></div>
+        <div class="acara-row"><b>Tempat</b><span>Pendapa Ndalem Rejoso, Kec. Rejoso, Kab. Pasuruan</span></div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Rejoso%2C+Kabupaten+Pasuruan" target="_blank" rel="noopener">Lihat lokasi di peta →</a>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Portofolio Badrus. All rights reserved.</p>
-    </footer>
-        
-</body>
+    <!-- COUNTDOWN -->
+    <section id="hitung-mundur">
+      <p class="eyebrow">Menghitung Hari</p>
+      <h2 class="section-title">Sampai Hari Bahagia</h2>
+      <div class="cd-grid" id="countdown">
+        <div class="cd-cell"><div class="cd-num" id="cd-hari">00</div><div class="cd-label">HARI</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-jam">00</div><div class="cd-label">JAM</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-menit">00</div><div class="cd-label">MENIT</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-detik">00</div><div class="cd-label">DETIK</div></div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp">
+      <p class="eyebrow">Konfirmasi Kehadiran</p>
+      <h2 class="section-title">RSVP</h2>
+      <form class="rsvp-form" id="formRsvp">
+        <div class="field">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" placeholder="Nama lengkap" required>
+        </div>
+        <div class="field">
+          <label for="kehadiran">Konfirmasi Kehadiran</label>
+          <select id="kehadiran">
+            <option>Hadir</option>
+            <option>Tidak dapat hadir</option>
+            <option>Masih ragu</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="jumlah">Jumlah Tamu</label>
+          <input type="number" id="jumlah" min="1" max="4" value="1">
+        </div>
+        <div class="field">
+          <label for="ucapan">Ucapan &amp; Doa</label>
+          <textarea id="ucapan" placeholder="Tuliskan ucapan dan doa terbaik Anda"></textarea>
+        </div>
+        <button type="submit" class="btn-send">Kirim Konfirmasi</button>
+      </form>
+
+      <div class="wishes-list" id="wishesList"></div>
+      <p class="wish-empty" id="wishEmpty">Jadilah yang pertama mengirimkan ucapan dan doa.</p>
+    </section>
+
+    <!-- PENUTUP -->
+    <section id="penutup">
+      <svg class="gunungan" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 4 C60 30 90 40 90 70 C90 100 65 116 50 116 C35 116 10 100 10 70 C10 40 40 30 50 4 Z" stroke="#D4A94A" stroke-width="1.2"/>
+        <path d="M50 20 C56 38 76 46 76 68 C76 92 62 104 50 104 C38 104 24 92 24 68 C24 46 44 38 50 20 Z" stroke="#D4A94A" stroke-width="0.8" opacity="0.6"/>
+      </svg>
+      <p class="lead-quote">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      <p class="penutup-names">Kirana &amp; Bagaskara</p>
+    </section>
+
+  </div>
+</div>
+
 <script src="script.js"></script>
-</html>
+</body>
+                                                                                </html>
+                                                                                
